@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-ar="دليل شامل للعبة Rise of Kingdoms" data-lang-en="A Comprehensive Guide to Rise of Kingdoms">دليل شامل للعبة Rise of Kingdoms</title>
+    <!-- Inter & Cairo fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container flex justify-between items-center py-4">
+            <div class="text-3xl font-bold text-yellow-400">
+                RoK Guide
+            </div>
+            <div class="flex items-center space-x-4 md:space-x-6">
+                <nav class="hidden md:flex space-x-6 text-lg">
+                    <a href="#leaders" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="القادة" data-lang-en="Leaders">القادة</a>
+                    <a href="#civilizations" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="الحضارات" data-lang-en="Civilizations">الحضارات</a>
+                    <a href="#kvk" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="ما هو KvK؟" data-lang-en="What is KvK?">ما هو KvK؟</a>
+                    <a href="#equipment" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="المعدات" data-lang-en="Equipment">المعدات</a>
+                    <a href="#pairings" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="أزواج القادة" data-lang-en="Commander Pairings">أزواج القادة</a>
+                    <a href="#tips" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="نصائح" data-lang-en="Tips">نصائح</a>
+                </nav>
+                <button id="lang-toggle" class="bg-yellow-500 text-gray-900 font-bold py-1 px-3 rounded-full shadow-lg hover:bg-yellow-600 transition-all duration-300">
+                    EN
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none" aria-label="Toggle mobile menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <div class="flex flex-col items-center py-4 space-y-4 text-lg">
+                <a href="#leaders" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="القادة" data-lang-en="Leaders">القادة</a>
+                <a href="#civilizations" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="الحضارات" data-lang-en="Civilizations">الحضارات</a>
+                <a href="#kvk" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="ما هو KvK؟" data-lang-en="What is KvK?">ما هو KvK؟</a>
+                <a href="#equipment" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="المعدات" data-lang-en="Equipment">المعدات</a>
+                <a href="#pairings" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="أزواج القادة" data-lang-en="Commander Pairings">أزواج القادة</a>
+                <a href="#tips" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300" data-lang-ar="نصائح" data-lang-en="Tips">نصائح</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 py-20 text-center">
+        <div class="container">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-yellow-400 mb-4 animate-fade-in-down" data-lang-ar="دليل شامل للعبة Rise of Kingdoms" data-lang-en="A Comprehensive Guide to Rise of Kingdoms">دليل شامل للعبة Rise of Kingdoms</h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8 animate-fade-in-up" data-lang-ar="اكتشف أسرار اللعبة، أفضل القادة، واستراتيجيات الفوز" data-lang-en="Discover game secrets, the best commanders, and winning strategies">اكتشف أسرار اللعبة، أفضل القادة، واستراتيجيات الفوز</p>
+            <a href="#leaders" class="bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-600 transition-all duration-300 transform hover:scale-105" data-lang-ar="ابدأ رحلتك الآن" data-lang-en="Start your journey now">ابدأ رحلتك الآن</a>
+        </div>
+    </section>
+
+    <!-- Leaders Section -->
+    <section id="leaders" class="py-20">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-400" data-lang-ar="أفضل القادة في اللعبة" data-lang-en="Best Commanders in the Game">أفضل القادة في اللعبة</h2>
+            <!-- Search bar -->
+            <div class="flex justify-center mb-8">
+                <input type="text" id="commander-search" class="w-full max-w-md p-3 rounded-full bg-gray-700 text-gray-200 placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300" data-lang-ar="ابحث عن قائد..." data-lang-en="Search for a commander..." placeholder="ابحث عن قائد..." aria-label="Search for a commander">
+            </div>
+            <!-- Filter and Sort controls -->
+            <div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 mb-8">
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-4 sm:mb-0">
+                    <button class="btn-filter bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-2 px-4 rounded-full active" data-filter="all" aria-label="Show all commanders" data-lang-ar="الكل" data-lang-en="All">الكل</button>
+                    <button class="btn-filter bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-2 px-4 rounded-full" data-filter="infantry" aria-label="Show infantry commanders" data-lang-ar="مشاة" data-lang-en="Infantry">مشاة</button>
+                    <button class="btn-filter bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-2 px-4 rounded-full" data-filter="cavalry" aria-label="Show cavalry commanders" data-lang-ar="فرسان" data-lang-en="Cavalry">فرسان</button>
+                    <button class="btn-filter bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-2 px-4 rounded-full" data-filter="archers" aria-label="Show archer commanders" data-lang-ar="رماة" data-lang-en="Archers">رماة</button>
+                    <button class="btn-filter bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-2 px-4 rounded-full" data-filter="gathering" aria-label="Show gathering commanders" data-lang-ar="جمع" data-lang-en="Gathering">جمع</button>
+                    <button class="btn-filter bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-2 px-4 rounded-full" data-filter="support" aria-label="Show support commanders" data-lang-ar="دعم" data-lang-en="Support">دعم</button>
+                </div>
+                <div class="relative">
+                    <select id="sort-by" class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-400 cursor-pointer">
+                        <option value="name" data-lang-ar="الاسم" data-lang-en="Name">Name</option>
+                        <option value="tier" data-lang-ar="الطبقة" data-lang-en="Tier">Tier</option>
+                    </select>
+                </div>
+            </div>
+            <div id="commanders-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Commander cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Civilizations Section -->
+    <section id="civilizations" class="py-20 bg-gray-800">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-400" data-lang-ar="الحضارات" data-lang-en="Civilizations">الحضارات</h2>
+            <div id="civilizations-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Civilization cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- KvK Section -->
+    <section id="kvk" class="py-20">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-400" data-lang-ar="ما هو حدث KvK؟" data-lang-en="What is KvK?">ما هو حدث KvK؟</h2>
+            <div class="card-bg rounded-xl p-6 shadow-lg">
+                <p class="text-gray-400 leading-relaxed" data-lang-ar="KvK هو اختصار لـ Kingdom vs. Kingdom (المملكة ضد المملكة)، وهو أهم حدث في اللعبة. إنه عبارة عن حرب شاملة بين عدة ممالك تتنافس على السيطرة على 'المملكة الضائعة'. الهدف هو جمع أكبر عدد من النقاط من خلال قتل قوات الأعداء، مهاجمة القلاع، السيطرة على المعالم، وجمع الموارد في مناطق محددة. التخطيط والتعاون بين أعضاء التحالف أمر بالغ الأهمية للفوز بـ KvK والحصول على مكافآت ضخمة. KvK ينقسم لمراحل: Pre-KVK، فتح البوابات، السيطرة على المناطق، قتال الزقورات. مدته 50-60 يومًا." data-lang-en="KvK stands for Kingdom vs. Kingdom, and it's the most important event in the game. It's a large-scale war between several kingdoms competing for control of 'The Lost Kingdom.' The goal is to accumulate the most points by killing enemy troops, attacking forts, controlling structures, and gathering resources in specific areas. Planning and cooperation between alliance members is crucial for winning KvK and getting huge rewards. KvK is divided into stages: Pre-KVK, Gate Opening, Zone Control, Ziggurat Fights. It lasts for 50-60 days.">KvK هو اختصار لـ Kingdom vs. Kingdom (المملكة ضد المملكة)، وهو أهم حدث في اللعبة. إنه عبارة عن حرب شاملة بين عدة ممالك تتنافس على السيطرة على 'المملكة الضائعة'. الهدف هو جمع أكبر عدد من النقاط من خلال قتل قوات الأعداء، مهاجمة القلاع، السيطرة على المعالم، وجمع الموارد في مناطق محددة. التخطيط والتعاون بين أعضاء التحالف أمر بالغ الأهمية للفوز بـ KvK والحصول على مكافآت ضخمة. KvK ينقسم لمراحل: Pre-KVK، فتح البوابات، السيطرة على المناطق، قتال الزقورات. مدته 50-60 يومًا.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment" class="py-20 bg-gray-800">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-400" data-lang-ar="أفضل المعدات للقوات" data-lang-en="Best Equipment for Troops">أفضل المعدات للقوات</h2>
+            <div class="space-y-8">
+                <!-- General Equipment -->
+                <div class="card-bg rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl md:text-2xl font-semibold text-yellow-300 mb-2" data-lang-ar="معدات عامة" data-lang-en="General Equipment">معدات عامة</h3>
+                    <ul class="text-gray-400 list-disc list-inside space-y-2 leading-relaxed text-sm">
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>المعدات الأسطورية:</span> Ring of Doom، Horn of Fury." data-lang-en="<span class='font-semibold text-yellow-200'>Legendary Equipment:</span> Ring of Doom, Horn of Fury.">المعدات الأسطورية: Ring of Doom، Horn of Fury.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>المعدات الملحمية:</span> Windswept (للمشاة)، Vanguard (للفرسان)." data-lang-en="<span class='font-semibold text-yellow-200'>Epic Equipment:</span> Windswept (for Infantry), Vanguard (for Cavalry).">المعدات الملحمية: Windswept (للمشاة)، Vanguard (للفرسان).</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>ملاحظة:</span> ركز على المعدات التي تزيد من الدفاع والصحة للمشاة، والهجوم والسرعة للفرسان، والهجوم وضرر المهارات للرماة." data-lang-en="<span class='font-semibold text-yellow-200'>Note:</span> Focus on equipment that increases defense and health for infantry, attack and speed for cavalry, and attack and skill damage for archers.">ملاحظة: ركز على المعدات التي تزيد من الدفاع والصحة للمشاة، والهجوم والسرعة للفرسان، والهجوم وضرر المهارات للرماة.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commander Pairings Section -->
+    <section id="pairings" class="py-20">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-400" data-lang-ar="أقوى أزواج القادة" data-lang-en="Strongest Commander Pairings">أقوى أزواج القادة</h2>
+            <!-- Pairings content will be dynamically inserted here -->
+            <div id="pairings-container" class="space-y-8"></div>
+        </div>
+    </section>
+
+    <!-- F2P and P2W Commanders -->
+    <section class="py-20">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-400" data-lang-ar="أفضل القادة للمبتدئين والمحترفين" data-lang-en="Best F2P and P2W Commanders">أفضل القادة للمبتدئين والمحترفين</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card-bg rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-yellow-300 mb-4" data-lang-ar="للمبتدئين (F2P)" data-lang-en="For Beginners (F2P)">للمبتدئين (F2P)</h3>
+                    <ul class="text-gray-400 list-disc list-inside space-y-2 leading-relaxed text-sm">
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>صن تزو:</span> قائد مشاة قوي وفعال من حيث التكلفة." data-lang-en="<span class='font-semibold text-yellow-200'>Sun Tzu:</span> A strong and cost-effective infantry commander.">صن تزو: قائد مشاة قوي وفعال من حيث التكلفة.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>بيورن ايرونسايد:</span> ممتاز في بداية اللعبة للمشاة." data-lang-en="<span class='font-semibold text-yellow-200'>Björn Ironside:</span> Excellent for infantry early in the game.">بيورن ايرونسايد: ممتاز في بداية اللعبة للمشاة.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>أثيلفليد:</span> قائدة قوية ومتعددة الاستخدامات ويمكن الحصول عليها مجانًا." data-lang-en="<span class='font-semibold text-yellow-200'>Æthelflæd:</span> A strong and versatile commander that can be obtained for free.">أثيلفليد: قائدة قوية ومتعددة الاستخدامات ويمكن الحصول عليها مجانًا.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>بيليساريوس:</span> قائد فرسان سريع وممتاز لجمع الموارد وقتل البرابرة." data-lang-en="<span class='font-semibold text-yellow-200'>Belisarius:</span> A fast cavalry commander, excellent for gathering and killing barbarians.">بيليساريوس: قائد فرسان سريع وممتاز لجمع الموارد وقتل البرابرة.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>جان دارك (ملحمي):</span> قائدة دعم وجمع ممتازة." data-lang-en="<span class='font-semibold text-yellow-200'>Joan of Arc (Epic):</span> An excellent support and gathering commander.">جان دارك (ملحمي): قائدة دعم وجمع ممتازة.</li>
+                    </ul>
+                </div>
+                <div class="card-bg rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-yellow-300 mb-4" data-lang-ar="للمحترفين (P2W)" data-lang-en="For Pros (P2W)">للمحترفين (P2W)</h3>
+                    <ul class="text-gray-400 list-disc list-inside space-y-2 leading-relaxed text-sm">
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>يوتاكا موريدا:</span> قائد رماة يسبب ضررًا كبيرًا للمنطقة." data-lang-en="<span class='font-semibold text-yellow-200'>Yi Seong-Gye:</span> An archer commander who deals massive area damage.">يوتاكا موريدا: قائد رماة يسبب ضررًا كبيرًا للمنطقة.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>الكسندر الأكبر:</span> قائد مشاة متوازن في الهجوم والدفاع." data-lang-en="<span class='font-semibold text-yellow-200'>Alexander the Great:</span> A balanced infantry commander for both attack and defense.">الكسندر الأكبر: قائد مشاة متوازن في الهجوم والدفاع.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>جوان يو:</span> قائد مشاة يسبب ضررًا هائلاً." data-lang-en="<span class='font-semibold text-yellow-200'>Guan Yu:</span> An infantry commander who deals massive damage.">جوان يو: قائد مشاة يسبب ضررًا هائلاً.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>نفسكي:</span> قائد فرسان قوي جدًا." data-lang-en="<span class='font-semibold text-yellow-200'>Nevsky:</span> A very strong cavalry commander.">نفسكي: قائد فرسان قوي جدًا.</li>
+                        <li data-lang-ar="<span class='font-semibold text-yellow-200'>هيرمان برايم:</span> نسخة مطورة من هيرمان، قوي جدًا للرماة." data-lang-en="<span class='font-semibold text-yellow-200'>Hermann Prime:</span> An upgraded version of Hermann, very strong for archers.">هيرمان برايم: نسخة مطورة من هيرمان، قوي جدًا للرماة.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-20">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-400" data-lang-ar="نصائح واستراتيجيات" data-lang-en="Tips and Strategies">نصائح واستراتيجيات</h2>
+            <div class="space-y-8">
+                <!-- Tip 1 -->
+                <div class="card-bg rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl md:text-2xl font-semibold text-yellow-300 mb-2" data-lang-ar="تطوير القادة" data-lang-en="Commander Development">تطوير القادة</h3>
+                    <p class="text-gray-400 leading-relaxed" data-lang-ar="لا تقم بتطوير كل قائد تحصل عليه. ركز على القادة الذين ستستخدمهم على المدى الطويل. القائد الأول الذي يجب أن تركز عليه هو صن تزو لأنه ممتاز ومتاح للجميع." data-lang-en="Don't develop every commander you get. Focus on the commanders you will use in the long term. The first commander you should focus on is Sun Tzu as he is excellent and available to everyone.">لا تقم بتطوير كل قائد تحصل عليه. ركز على القادة الذين ستستخدمهم على المدى الطويل. القائد الأول الذي يجب أن تركز عليه هو صن تزو لأنه ممتاز ومتاح للجميع.</p>
+                </div>
+                <!-- Tip 2 -->
+                <div class="card-bg rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl md:text-2xl font-semibold text-yellow-300 mb-2" data-lang-ar="إدارة نقاط العمل" data-lang-en="Action Point Management">إدارة نقاط العمل</h3>
+                    <p class="text-gray-400 leading-relaxed" data-lang-ar="لا تدع نقاط العمل تصل إلى الحد الأقصى. استخدمها باستمرار لمهاجمة البرابرة أو الوحوش للحصول على مكافآت قيمة مثل نقاط الخبرة وكتب المهارات." data-lang-en="Don't let your Action Points reach their maximum. Use them continuously to attack barbarians or monsters to get valuable rewards like experience points and skill books.">لا تدع نقاط العمل تصل إلى الحد الأقصى. استخدمها باستمرار لمهاجمة البرابرة أو الوحوش للحصول على مكافآت قيمة مثل نقاط الخبرة وكتب المهارات.</p>
+                </div>
+                <!-- Tip 3 -->
+                <div class="card-bg rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl md:text-2xl font-semibold text-yellow-300 mb-2" data-lang-ar="التركيز على مسيرتين" data-lang-en="Focus on Two Marches">التركيز على مسيرتين</h3>
+                    <p class="text-gray-400 leading-relaxed" data-lang-ar="في البداية، ركز على تطوير قائدين أساسيين (أساسي وثانوي) بدلاً من نشر مواردك على الكثير من القادة. هذا يضمن أن لديك مسيرتين قويتين قادرتين على القتال بفعالية." data-lang-en="Initially, focus on developing two main commanders (primary and secondary) instead of spreading your resources too thin. This ensures you have two strong marches capable of fighting effectively.">في البداية، ركز على تطوير قائدين أساسيين (أساسي وثانوي) بدلاً من نشر مواردك على الكثير من القادة. هذا يضمن أن لديك مسيرتين قويتين قادرتين على القتال بفعالية.</p>
+                </div>
+                <!-- Tip 4 -->
+                <div class="card-bg rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl md:text-2xl font-semibold text-yellow-300 mb-2" data-lang-ar="تطوير المعدات تدريجيًا" data-lang-en="Develop Equipment Gradually">تطوير المعدات تدريجيًا</h3>
+                    <p class="text-gray-400 leading-relaxed" data-lang-ar="ابدأ بالمعدات الأرجوانية (Epic) ثم انتقل تدريجيًا إلى المعدات الأسطورية (Legendary) عندما تكون مواردك تسمح بذلك. لا تهدر مواردك على معدات ضعيفة في البداية." data-lang-en="Start with Epic equipment and then gradually move to Legendary equipment when your resources allow. Don't waste your resources on weak equipment early on.">ابدأ بالمعدات الأرجوانية (Epic) ثم انتقل تدريجيًا إلى المعدات الأسطورية (Legendary) عندما تكون مواردك تسمح بذلك. لا تهدر مواردك على معدات ضعيفة في البداية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-6 mt-12">
+        <p class="text-gray-400" data-lang-ar="&copy; by I9D thank you for read !" data-lang-en="&copy; 2024 RoK Guide. All Rights Reserved.">&copy; by I9D thank you for read !</p>
+    </footer>
+
+    <!-- Commander Details Modal -->
+    <div id="commander-modal" class="fixed inset-0 hidden flex items-center justify-center modal z-50">
+        <div class="modal-content card-bg rounded-xl p-8 shadow-lg max-w-lg w-full m-4 relative">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors duration-200 focus:outline-none" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 id="modal-commander-name" class="text-2xl font-bold text-yellow-400 mb-2"></h3>
+            <p id="modal-commander-rarity" class="text-sm text-gray-400 mb-4"></p>
+            <div id="modal-commander-tier" class="mb-4"></div>
+            <p id="modal-commander-specialties" class="text-gray-300 mb-2"></p>
+            <p id="modal-commander-best-use" class="text-gray-300 mb-2"></p>
+            <p id="modal-commander-bonus" class="text-gray-300"></p>
+            <div id="modal-commander-builds" class="mt-4"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
